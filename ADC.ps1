@@ -1,4 +1,4 @@
-$appName = Read-Host -Prompt 'Input your app name'
+$appName = "Hello1"
 
 
 if(!($myApp = Get-AzureADApplication -Filter "DisplayName eq '$($appName)'"  -ErrorAction SilentlyContinue))
