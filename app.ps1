@@ -1,3 +1,4 @@
+Connect-AzAccount
 $result=az ad app create --display-name 'test2'
 $new =(echo $result | jq .appId -r)
 $result2=az ad app credential reset --id $new --append
