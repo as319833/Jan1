@@ -1,4 +1,4 @@
-$appName = "Acc2"
+$appName = "Acc9"
 
 
 if(!($myApp = Get-AzureADApplication -Filter "DisplayName eq '$($appName)'"  -ErrorAction SilentlyContinue))
