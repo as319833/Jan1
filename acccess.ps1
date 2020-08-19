@@ -1,3 +1,5 @@
+Install-Module MSOnline
+Install-Module AzureADPreview
 $msiName="managedIdentity1"
 $msiObjectId = "$(Get-AzureADServicePrincipal -Filter "DisplayName eq '$msiName'").ObjectId"
 # Windows Azure Active Directory
