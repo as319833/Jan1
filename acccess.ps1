@@ -1,4 +1,5 @@
-$msiName="myID4"
+Connect-AzureAD
+$msiName="managedIdentity1"
 $msiObjectId = "$(Get-AzureADServicePrincipal -Filter "DisplayName eq '$msiName'").ObjectId"
 # Windows Azure Active Directory
 $GraphAppId = "00000002-0000-0000-c000-000000000000" 
